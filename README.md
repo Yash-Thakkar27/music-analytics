@@ -1,6 +1,6 @@
-# Music Analytics (JioSaavn)
+# Music Analytics (Spotify Listening History)
 
-Streamlit dashboards and a simple session-based recommender built on top of a Postgres warehouse populated from the JioSaavn listening history CSV. ETL scripts load the raw CSV into `songs`, `users`, and `listens` tables; the dashboards query that database for KPIs, exports, and recommendation demos.
+Streamlit dashboards and a simple session-based recommender built on top of a Postgres warehouse populated from the Spotify listening history CSV. ETL scripts load the raw CSV into `songs`, `users`, and `listens` tables; the dashboards query that database for KPIs, exports, and recommendation demos.
 
 ## Features
 - Streamlit dashboards: KPIs, daily listens/skip-rate trends, DAU/MAU, top songs, session duration distribution, skip vs tempo scatter, optional KMeans user segments.
