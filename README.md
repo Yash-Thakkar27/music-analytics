@@ -12,7 +12,7 @@ Streamlit dashboards and a simple session-based recommender built on top of a Po
 ## Repository Layout
 - `app/` – Streamlit apps (`streamlit_dashboards.py`, `streamlit_recommender.py`).
 - `src/etl/` – CSV → Postgres loaders (`load_songs_upsert.py`, `load_listens_chunks.py`, `load_main_csv.py`, `upsert_users_from_csv.py`).
-- `data_raw/` – expected location for `data_final.csv` (not committed).
+- `data_raw/` – expected location for `data_final.csv` (tracked with Git LFS).
 - `data_processed/` – placeholder for derived outputs.
 - `notebooks/` – exploration and sessionization notebooks.
 - `docs/`, `dashboards/`, `sql/` – placeholders for documentation, exported dashboards, or SQL schema (currently empty).
@@ -20,7 +20,7 @@ Streamlit dashboards and a simple session-based recommender built on top of a Po
 ## Prerequisites
 - Python 3.10+.
 - PostgreSQL instance accessible to the app (default connection points to `localhost:5432`).
-- `data_raw/data_final.csv` placed locally (dataset not bundled in the repo).
+- `data_raw/data_final.csv` placed locally (stored via Git LFS in this repo).
 
 ## Installation
 ```bash
